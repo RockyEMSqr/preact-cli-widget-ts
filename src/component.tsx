@@ -17,12 +17,13 @@ export function App(props: Props): VNode {
 export const AComp = ()=>{
     return <div>AComp</div>
 }
-import {ExportThis, Text, Input} from './importThis'
-export {ExportThis, Text, Input};
-export default{
-    App,
-    AComp,
-    ExportThis,
-    Text,
-    Input
-}
+// import {ExportThis, Text, Input} from './importThis'
+// export {ExportThis, Text, Input};
+// export default{
+//     App,
+//     AComp,
+//     ExportThis,
+//     Text,
+//     Input
+// }
+export * from './importThis'
