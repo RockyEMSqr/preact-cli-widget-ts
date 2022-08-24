@@ -17,7 +17,10 @@ function App(props: Props): VNode {
 export const AComp = ()=>{
     return <div>AComp</div>
 }
+import {ExportThis} from './importThis'
+export {ExportThis};
 export default{
     App,
-    AComp
+    AComp,
+    ExportThis
 }
