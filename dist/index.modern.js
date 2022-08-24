@@ -1,2 +1,2 @@
-import{h as o}from"preact";const l=()=>o("div",null,"Exported"),r=()=>o("div",null,"AComp");var t={App:function(l){return o("div",null,o("h1",{style:{color:l.color}},"Hello, World!"))},AComp:r,ExportThis:l};export{r as AComp,l as ExportThis,t as default};
+import{h as r,Component as t}from"preact";const e=()=>r("div",null,"Exported");class l extends t{render(){return r("div",null,"Input")}}class n extends l{render(){return r("div",null,"Text Input")}}function o(t){return r("div",null,r("h1",{style:{color:t.color}},"Hello, World!"))}const u=()=>r("div",null,"AComp");var d={App:o,AComp:u,ExportThis:e,Text:n,Input:l};export{u as AComp,o as App,e as ExportThis,l as Input,n as Text,d as default};
 //# sourceMappingURL=index.modern.js.map

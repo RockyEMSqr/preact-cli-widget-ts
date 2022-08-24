@@ -6,7 +6,7 @@ interface Props {
     color?: string;
 }
 
-function App(props: Props): VNode {
+export function App(props: Props): VNode {
     return (
         <div>
             <h1 style={{ color: props.color }}>Hello, World!</h1>
@@ -17,10 +17,12 @@ function App(props: Props): VNode {
 export const AComp = ()=>{
     return <div>AComp</div>
 }
-import {ExportThis} from './importThis'
-export {ExportThis};
+import {ExportThis, Text, Input} from './importThis'
+export {ExportThis, Text, Input};
 export default{
     App,
     AComp,
-    ExportThis
+    ExportThis,
+    Text,
+    Input
 }
